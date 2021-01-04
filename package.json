@@ -17,7 +17,10 @@
     "blog",
     "typescript"
   ],
-  "author": "Olakunle Boye",
+  "author": {
+	  "name": "Olakunle Boye",
+	  "email": "kunlexzy@gmail.com"
+  },
   "license": "ISC",
   "engines": {
     "node": "12.x",
