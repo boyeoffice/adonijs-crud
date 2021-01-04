@@ -2,11 +2,12 @@
   "name": "my-blog-api",
   "version": "1.0.0",
   "description": "personal blog",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "tsc": "tsc",
-	"dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
-	"start": "tsc && node ./build/index.js",
+	"tsc": "tsc",
+	"dev": "ts-node-dev --respawn --transpile-only ./src/app.ts",
+    "start:dev": "tsc && vercel dev",
+	"start:prod": "tsc && node ./dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -18,8 +19,8 @@
     "typescript"
   ],
   "author": {
-	  "name": "Olakunle Boye",
-	  "email": "kunlexzy@gmail.com"
+    "name": "Olakunle Boye",
+    "email": "kunlexzy@gmail.com"
   },
   "license": "ISC",
   "engines": {
@@ -32,6 +33,7 @@
     "typescript": "^4.1.3"
   },
   "devDependencies": {
-    "ts-node-dev": "^1.1.1"
+    "ts-node-dev": "^1.1.1",
+    "vercel": "^21.0.1"
   }
 }
