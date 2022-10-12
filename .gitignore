@@ -1,6 +1,7 @@
-.env
-build
-dist
 node_modules
-
-.vercel
+build
+coverage
+.vscode
+.DS_STORE
+.env
+tmp
