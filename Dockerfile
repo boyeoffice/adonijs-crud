@@ -7,7 +7,7 @@ USER node
 
 COPY --chown=node:node ./package.json ./
 COPY --chown=node:node yarn.lock ./
-RUN npm ci
+RUN yarn install
 
 COPY --chown=node:node . .
 
