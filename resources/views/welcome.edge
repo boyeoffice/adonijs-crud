@@ -1,6 +1,26 @@
 @layout('layouts/master')
 @section('body')
-
+@set('fashion', {
+  title: 'Man & Woman Fashion',
+  items: [
+    {
+      title: 'Man T -shirt',
+      price: 30,
+      image: 'images/tshirt-img.png'
+    },
+    {
+      title: 'Man -shirt',
+      price: 30,
+      image: 'images/dress-shirt-img.png'
+    },
+    {
+      title: 'Woman Scart',
+      price: 30,
+      image: 'images/women-clothes-img.png'
+    },
+  ]
+})
+@includeIf(fashion, 'partials/posts')
 @end
 
 
